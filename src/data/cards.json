@@ -1,0 +1,127 @@
+[
+  {
+    "id": "major_00_fool",
+    "name": "The Fool",
+    "type": "major",
+    "modes": [
+      "party",
+      "truth_dare",
+      "couple",
+      "chaos"
+    ],
+    "art": "fool_img",
+    "prompts": [
+      "Skip your next turn.",
+      "Do your dumbest dance for 10 seconds.",
+      "You are now the Fool. If anyone says your name, you do a dare."
+    ]
+  },
+  {
+    "id": "major_13_death",
+    "name": "Death",
+    "type": "major",
+    "modes": [
+      "party",
+      "chaos"
+    ],
+    "art": "death_img",
+    "prompts": [
+      "Everyone does a dare.",
+      "Reset all ongoing rules — the game is reborn.",
+      "Swap seats with someone and perform a joint dare."
+    ]
+  },
+  {
+    "id": "major_06_lovers",
+    "name": "The Lovers",
+    "type": "major",
+    "modes": [
+      "couple",
+      "party"
+    ],
+    "art": "lovers_img",
+    "prompts": [
+      "Pick 2 players to perform this dare together.",
+      "Choose a partner for the next 3 rounds — actions affect both.",
+      "Answer a romantic truth or accept a couple's dare."
+    ]
+  },
+  {
+    "id": "major_16_tower",
+    "name": "The Tower",
+    "type": "major",
+    "modes": [
+      "party",
+      "chaos"
+    ],
+    "art": "tower_img",
+    "prompts": [
+      "Answer a difficult truth or take a double-dare.",
+      "If you refuse, take the punishment card next round.",
+      "Everyone votes — pass or fail. Fail = drink/do a dare."
+    ]
+  },
+  {
+    "id": "major_10_wheel_of_fortune",
+    "name": "The Wheel of Fortune",
+    "type": "major",
+    "modes": [
+      "party",
+      "chaos",
+      "truth_dare"
+    ],
+    "art": "wheel_img",
+    "prompts": [
+      "Spin the wheel of fate: choose truth, dare, swap, or steal. The group decides the outcome.",
+      "Your luck shifts — give one player your next punishment.",
+      "Everyone draws a mini-fate: each player gives you a one-line truth or dare."
+    ]
+  },
+  {
+    "id": "major_20_judgement",
+    "name": "Judgment",
+    "type": "major",
+    "modes": [
+      "party",
+      "truth_dare"
+    ],
+    "art": "judgement_img",
+    "prompts": [
+      "Stand up and justify one past action — the group will judge if it's truth or lie.",
+      "Everyone votes on your performance this round. Majority decides your fate.",
+      "Call out one player — they receive your next dare unless they confess something real."
+    ]
+  },
+  {
+    "id": "major_09_hermit",
+    "name": "The Hermit",
+    "type": "major",
+    "modes": [
+      "truth_dare",
+      "couple",
+      "party"
+    ],
+    "art": "hermit_img",
+    "prompts": [
+      "Take a 10-second introspection: reveal a personal truth or skip your next move.",
+      "Choose one player for a private whisper dare — they must announce the result.",
+      "You may sit out the next group challenge, but someone must volunteer in your place."
+    ]
+  },
+  {
+    "id": "major_15_devil",
+    "name": "The Devil",
+    "type": "major",
+    "modes": [
+      "party",
+      "couple",
+      "chaos"
+    ],
+    "art": "devil_img",
+    "prompts": [
+      "Temptation time — offer a deal to any player. If they accept, both do a shared dare.",
+      "You may force one player to choose between a bold truth or a spicy dare.",
+      "All players reveal a guilty pleasure. You choose one person to act on theirs."
+    ]
+  }
+]
