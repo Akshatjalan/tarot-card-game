@@ -6,15 +6,29 @@
     "modes": [
       "party",
       "truth_dare",
-      "couple",
       "chaos"
     ],
-    "art": "fool_img",
+    "rarity": "Common",
     "prompts": [
-      "Skip your next turn.",
-      "Do your dumbest dance for 10 seconds.",
-      "You are now the Fool. If anyone says your name, you do a dare."
-    ]
+      "{player}, do your silliest walk across the room.",
+      "{player}, speak in a dramatic movie trailer voice until your next turn.",
+      "{player}, swap seats with {someone} without saying a word.",
+      "{player}, for the next round you can only answer with “yes” or “no”.",
+      "{player}, pick {someone} to mirror your actions for one round.",
+      "{player}, you must introduce yourself like a superhero origin story.",
+      "{player}, let {someone} change your name for the next 3 rounds.",
+      "{player}, you must narrate everything you do out loud until your next turn.",
+      "Reveal your best “sexy pose” for 5 seconds.",
+      "Let Player {someone} choose a song and dance close for 20 seconds.",
+      "Last person to touch the floor takes 2 sips.",
+      "Everyone makes a funny face — the worst one drinks."
+    ],
+    "miniGame": {
+      "type": "timer_challenge",
+      "title": "Fool’s Spotlight",
+      "description": "{player}, you have 30 seconds to make everyone laugh. If no one laughs, you do another dare.",
+      "durationSec": 30
+    }
   },
   {
     "id": "major_13_death",
@@ -22,29 +36,62 @@
     "type": "major",
     "modes": [
       "party",
+      "truth_dare",
       "chaos"
     ],
-    "art": "death_img",
+    "rarity": "Rare",
     "prompts": [
-      "Everyone does a dare.",
-      "Reset all ongoing rules — the game is reborn.",
-      "Swap seats with someone and perform a joint dare."
-    ]
+      "{player}, your old dare is dead. Draw a new card and do BOTH.",
+      "{player}, end one habit for the rest of the game. If you break it, you take a dare.",
+      "{player}, swap your drink or snack with {someone}. No take-backs.",
+      "{player}, you must speak in whispers until your next turn.",
+      "{player}, your phone is now off-limits for 2 rounds. Break it → dare.",
+      "{player}, choose one rule of the game to kill. Everyone must obey the change.",
+      "{player}, pretend you don’t know {someone} for one full round.",
+      "{player}, sacrifice your next turn and give a dare to {someone} instead.",
+      "Try to wink at someone without anyone noticing — if caught, take another dare.",
+      "Everyone points at who they think is most likely to survive a zombie apocalypse — most votes drinks.",
+      "Last person to stand up and sit down drinks.",
+      "Everyone makes a dramatic death pose — worst one drinks."
+    ],
+    "miniGame": {
+      "type": "vote",
+      "title": "Who Faces the End?",
+      "description": "Everyone points at the one who deserves the harshest dare.",
+      "options": [
+        "{player}",
+        "{someone}",
+        "{random}"
+      ]
+    }
   },
   {
     "id": "major_06_lovers",
     "name": "The Lovers",
     "type": "major",
     "modes": [
-      "couple",
-      "party"
+      "party",
+      "couple"
     ],
-    "art": "lovers_img",
+    "rarity": "Epic",
     "prompts": [
-      "Pick 2 players to perform this dare together.",
-      "Choose a partner for the next 3 rounds — actions affect both.",
-      "Answer a romantic truth or accept a couple's dare."
-    ]
+      "{player}, pick {someone}. You two must answer one deep question about each other.",
+      "{player}, compliment {someone} with three oddly specific nice things.",
+      "{player}, pick a duo. The rest of the group asks them one spicy question each.",
+      "{player}, call {someone} your favourite person for the next 2 rounds.",
+      "{player}, swap seats with {someone} and share one embarrassing story.",
+      "{player}, pick two players who must do a synced pose together.",
+      "{player}, choose {someone}. The group decides a cute nickname for them.",
+      "{player}, pick a pair who must act like a couple until one of them draws a major card.",
+      "What's the biggest turn-on personality trait for you?",
+      "Everyone pairs up and shares a fun fact about their partner — worst fact drinks."
+    ],
+    "miniGame": {
+      "type": "versus",
+      "title": "Perfect Match?",
+      "description": "{player} and {someone} are now a duo. Group decides who is the more chaotic half.",
+      "showGroupVote": true
+    }
   },
   {
     "id": "major_16_tower",
@@ -52,61 +99,125 @@
     "type": "major",
     "modes": [
       "party",
+      "truth_dare",
       "chaos"
     ],
-    "art": "tower_img",
+    "rarity": "Epic",
     "prompts": [
-      "Answer a difficult truth or take a double-dare.",
-      "If you refuse, take the punishment card next round.",
-      "Everyone votes — pass or fail. Fail = drink/do a dare."
-    ]
+      "{player}, your world crumbles. Let {someone} rewrite your next dare.",
+      "{player}, stand up and freeze in the most dramatic pose for 10 seconds.",
+      "{player}, let the group choose one word you can’t say for 3 rounds.",
+      "{player}, your seating is destroyed. Move to a completely new spot.",
+      "{player}, pick {someone}. You both must answer the next dare together.",
+      "{player}, act like everything is in slow motion until your next turn.",
+      "{player}, tell a story about your most chaotic day ever.",
+      "{player}, for one round you must overreact to everything anyone says.",
+      "Stare-down battle with Player {someone}. First to look away does a dare.",
+      "Group votes: most energetic person takes a sip.",
+      "Everyone makes a tower with their hands — last to finish drinks.",
+      "On the count of 3, everyone points at who they think is most likely to 'fall' and take a dare."
+    ],
+    "miniGame": {
+      "type": "vote",
+      "title": "Who Falls from the Tower?",
+      "description": "On 3, everyone points at the person who should get the toughest dare.",
+      "options": [
+        "{player}",
+        "{someone}",
+        "{random}"
+      ]
+    }
   },
   {
     "id": "major_10_wheel_of_fortune",
-    "name": "The Wheel of Fortune",
+    "name": "Wheel of Fortune",
     "type": "major",
     "modes": [
       "party",
-      "chaos",
-      "truth_dare"
+      "truth_dare",
+      "chaos"
     ],
-    "art": "wheel_img",
+    "rarity": "Rare",
     "prompts": [
-      "Spin the wheel of fate: choose truth, dare, swap, or steal. The group decides the outcome.",
-      "Your luck shifts — give one player your next punishment.",
-      "Everyone draws a mini-fate: each player gives you a one-line truth or dare."
-    ]
+      "{player}, your luck decides. Flip a coin: heads = dare, tails = truth.",
+      "{player}, choose {someone}. If they guess your favourite snack, they’re safe. If not, they take a dare.",
+      "{player}, roll an imaginary dice: 1–3 you drink / 4–6 you dare {someone}.",
+      "{player}, pick {someone}. Rock, paper, scissors: loser does a dare.",
+      "{player}, let {someone} decide if you get an easy or hard dare.",
+      "{player}, if your birth month is odd, answer a truth; if even, do a dare.",
+      "{player}, ask the group: “Am I lucky or cursed?” Majority vote decides who gets the dare.",
+      "{player}, if you’ve laughed in the last 30 seconds, you do a dare with {someone}.",
+      "What’s your current relationship status and one thing you enjoy about it?",
+      "Rock-paper-scissors with Player {someone}: loser sips."
+    ],
+    "miniGame": {
+      "type": "timer_challenge",
+      "title": "Spin of Fate",
+      "description": "{player}, you have 15 seconds to convince everyone you deserve an easy dare. If they are not convinced, you get a hard one.",
+      "durationSec": 15
+    }
   },
   {
     "id": "major_20_judgement",
-    "name": "Judgment",
+    "name": "Judgement",
     "type": "major",
     "modes": [
       "party",
-      "truth_dare"
+      "truth_dare",
+      "chaos"
     ],
-    "art": "judgement_img",
+    "rarity": "Legendary",
     "prompts": [
-      "Stand up and justify one past action — the group will judge if it's truth or lie.",
-      "Everyone votes on your performance this round. Majority decides your fate.",
-      "Call out one player — they receive your next dare unless they confess something real."
-    ]
+      "{player}, confess something you did that nobody in this room knows.",
+      "{player}, the group judges you. Let them decide if you get truth or dare.",
+      "{player}, pick {someone} and tell them one honest opinion you’ve never said out loud.",
+      "{player}, rate everyone’s vibe from 1–10. No explanations.",
+      "{player}, the group gives you a new rule you must follow for 3 rounds.",
+      "{player}, admit one thing you were wrong about recently.",
+      "{player}, pick {someone}. You both must say one nice thing and one funny roast about each other.",
+      "{player}, let the group decide a title for your autobiography.",
+      "Share your guilty crush (fictional or celebrity allowed).",
+      "Pick someone who laughs the loudest — they drink!"
+    ],
+    "miniGame": {
+      "type": "vote",
+      "title": "Judgement Day",
+      "description": "Who has been the most chaotic tonight? They receive the next dare.",
+      "options": [
+        "{player}",
+        "{someone}",
+        "{random}"
+      ]
+    }
   },
   {
     "id": "major_09_hermit",
     "name": "The Hermit",
     "type": "major",
     "modes": [
+      "party",
       "truth_dare",
-      "couple",
-      "party"
+      "couple"
     ],
-    "art": "hermit_img",
+    "rarity": "Rare",
     "prompts": [
-      "Take a 10-second introspection: reveal a personal truth or skip your next move.",
-      "Choose one player for a private whisper dare — they must announce the result.",
-      "You may sit out the next group challenge, but someone must volunteer in your place."
-    ]
+      "{player}, share a thought you usually keep to yourself.",
+      "{player}, close your eyes and describe the room from memory.",
+      "{player}, pick {someone} and ask them a deep question.",
+      "{player}, say one thing you’ve learned about yourself in the last year.",
+      "{player}, for one round, you can only speak when spoken to.",
+      "{player}, choose someone you secretly admire and give them a genuine compliment.",
+      "{player}, if you had to disappear for a week, who would you tell first?",
+      "{player}, share one habit you want to change and let the group suggest how.",
+      "Look someone in the eyes for 10 seconds. No laughing. Loser gets dared.",
+      "Everyone shares a secret talent — worst one drinks."
+    ],
+    "miniGame": {
+      "type": "timer_challenge",
+      "title": "Quiet Truth",
+      "description": "{player}, you have 30 seconds to answer anything the group asks—no jokes, only honest answers.",
+      "durationSec": 30
+    }
   },
   {
     "id": "major_15_devil",
@@ -114,14 +225,28 @@
     "type": "major",
     "modes": [
       "party",
-      "couple",
+      "truth_dare",
       "chaos"
     ],
-    "art": "devil_img",
+    "rarity": "Legendary",
     "prompts": [
-      "Temptation time — offer a deal to any player. If they accept, both do a shared dare.",
-      "You may force one player to choose between a bold truth or a spicy dare.",
-      "All players reveal a guilty pleasure. You choose one person to act on theirs."
-    ]
+      "{player}, admit a guilty pleasure you usually hide.",
+      "{player}, pick {someone}. You both must share one mildly unhinged thought.",
+      "{player}, tempt the group: offer an easy dare for yourself or a hard dare for {someone}.",
+      "{player}, for one round you must encourage every bad idea jokingly.",
+      "{player}, share the wildest thing you have considered doing but never did.",
+      "{player}, let {someone} read one random message notification on your phone (or take a dare instead).",
+      "{player}, choose two players to form a ‘chaos duo’. They must do the next dare together.",
+      "{player}, describe your villain arc in 3 sentences.",
+      "Attempt a pickup line on Player {someone}. They rate it out of 10.",
+      "Laugh without showing your teeth — fail = drink.",
+      "Imitate a famous villain — worst impression drinks."
+    ],
+    "miniGame": {
+      "type": "versus",
+      "title": "Deal with the Devil",
+      "description": "{player} chooses {someone}. Group decides who deserves the harsher dare.",
+      "showGroupVote": true
+    }
   }
 ]

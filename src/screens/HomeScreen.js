@@ -334,7 +334,7 @@ export default function HomeScreen({ navigation }) {
 
           {/* Small hint */}
           <Text style={[styles.smallMuted, { marginTop: 18, textAlign: "center", maxWidth: 340 }]}>
-            Tap the card to shuffle. Choose a mode or tap Start to pick one later.{'\n'}Tap ⚙️ for settings.
+            Tap the card to shuffle. Choose a mode or tap Start to pick one later.{'\n'}{'\n'}Tap ⚙️ for settings.
           </Text>
         </View>
 
